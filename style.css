@@ -257,7 +257,7 @@ section:last-child {
     margin-bottom: 3px;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media only screen and (min-width: 602px) and (max-width: 800px) {
     #headshot {
         display: none;
     }
@@ -268,15 +268,15 @@ section:last-child {
     }
 }
 
-@media all and (max-width: 601px) {
+@media only screen and (max-width: 601px) {
     #cv {
         width: 95%;
         margin: 10px auto;
         min-width: 280px;
     }
-    #headshot {
+    /* #headshot {
         display: none;
-    }
+    } */
     #name,
     #contactDetails {
         float: none;
@@ -299,7 +299,7 @@ section:last-child {
     }
 }
 
-@media all and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .mainDetails {
         padding: 15px 15px;
     }
