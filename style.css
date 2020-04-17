@@ -269,14 +269,14 @@ section:last-child {
 }
 
 @media only screen and (max-width: 601px) {
+    #headshot {
+        display: none;
+    }
     #cv {
         width: 95%;
         margin: 10px auto;
         min-width: 280px;
     }
-    /* #headshot {
-        display: none;
-    } */
     #name,
     #contactDetails {
         float: none;
@@ -326,121 +326,111 @@ section:last-child {
     }
 }
 
-@-webkit-keyframes reset {
-    0% {
-        opacity: 0;
+@media only screen {
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-    100% {
-        opacity: 0;
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-}
-
-@-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-    40% {
-        opacity: 0;
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    100% {
-        opacity: 1;
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-}
-
-@-moz-keyframes reset {
-    0% {
-        opacity: 0;
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    100% {
-        opacity: 0;
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-timing-function: ease-in;
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 0.5s;
+        -moz-animation-timing-function: ease-in;
+        animation-name: reset, fade-in;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
     }
-}
-
-@-moz-keyframes fade-in {
-    0% {
-        opacity: 0;
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
     }
-    40% {
-        opacity: 0;
+    .delayOne {
+        -webkit-animation-delay: 0s, .3s;
+        -moz-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
     }
-    100% {
-        opacity: 1;
+    .delayTwo {
+        -webkit-animation-delay: 0s, .6s;
+        -moz-animation-delay: 0s, .6s;
+        animation-delay: 0s, .6s;
     }
-}
-
-@keyframes reset {
-    0% {
-        opacity: 0;
+    .delayThree {
+        -webkit-animation-delay: 0s, .9s;
+        -moz-animation-delay: 0s, .9s;
+        animation-delay: 0s, .9s;
     }
-    100% {
-        opacity: 0;
+    .delayFour {
+        -webkit-animation-delay: 0s, 1.2s;
+        -moz-animation-delay: 0s, 1.2s;
+        animation-delay: 0s, 1.2s;
     }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
+    .delayFive {
+        -webkit-animation-delay: 0s, 1.5s;
+        -moz-animation-delay: 0s, 1.5s;
+        animation-delay: 0s, 1.5s;
     }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.instaFade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 0.5s;
-    -moz-animation-timing-function: ease-in;
-    animation-name: reset, fade-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-}
-
-.quickFade {
-    -webkit-animation-name: reset, fade-in;
-    -webkit-animation-duration: 1.5s;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-name: reset, fade-in;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-timing-function: ease-in;
-    animation-name: reset, fade-in;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-}
-
-.delayOne {
-    -webkit-animation-delay: 0s, .3s;
-    -moz-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-}
-
-.delayTwo {
-    -webkit-animation-delay: 0s, .6s;
-    -moz-animation-delay: 0s, .6s;
-    animation-delay: 0s, .6s;
-}
-
-.delayThree {
-    -webkit-animation-delay: 0s, .9s;
-    -moz-animation-delay: 0s, .9s;
-    animation-delay: 0s, .9s;
-}
-
-.delayFour {
-    -webkit-animation-delay: 0s, 1.2s;
-    -moz-animation-delay: 0s, 1.2s;
-    animation-delay: 0s, 1.2s;
-}
-
-.delayFive {
-    -webkit-animation-delay: 0s, 1.5s;
-    -moz-animation-delay: 0s, 1.5s;
-    animation-delay: 0s, 1.5s;
 }
 
 .linkedin {

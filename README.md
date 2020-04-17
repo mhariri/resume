@@ -5,8 +5,11 @@ Run in project directory:
 ```
 python3 -m http.server
 ```
+And browse to: [http://localhost:8000](http://localhost:8000)
 
 Convert to PDF
 ==============
-After running webserver, browse
-with chrome and print.
+Run:
+```
+./build.sh
+```
